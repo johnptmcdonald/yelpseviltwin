@@ -10,6 +10,7 @@ gem 'pg', group: :production
 
 gem 'carrierwave'
 gem 'fog'
+gem "mini_magick" # for resizing images
 
 gem 'figaro'
 

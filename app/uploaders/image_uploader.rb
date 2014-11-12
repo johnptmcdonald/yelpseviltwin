@@ -52,4 +52,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   else
     storage :file
   end
+  
+  process :resize_to_fit => [200, 300]
 end
