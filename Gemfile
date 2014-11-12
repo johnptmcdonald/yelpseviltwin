@@ -3,10 +3,15 @@ source 'https://rubygems.org'
 # for twitter bootstrap
 gem 'bootstrap-sass'
 
-# this is for heroku - it doesn't like sqlite3, and it needs rails_12_factor
+# these are for heroku - it doesn't like sqlite3, and it needs rails_12_factor
 gem 'rails_12factor', group: :production
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
+
+gem 'carrierwave'
+gem 'fog'
+
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
