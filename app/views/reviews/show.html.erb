@@ -9,6 +9,9 @@
   <strong>Comment:</strong>
   <%= @review.comment %>
 </p>
-
-<%= link_to 'Edit', edit_review_path(@review), class: "btn btn-link"  %> |
-<%= link_to 'Back', reviews_path, class: "btn btn-link"  %>
+<% if user_signed_in? %>
+	<% if (review.user == current_user) || (current_user.admin?) %>
+		<%= link_to 'Edit', edit_review_path(@review), class: "btn btn-link"  %> |
+		<%= link_to 'Back', reviews_path, class: "btn btn-link"  %>
+	<% end %>
+<% end %>
