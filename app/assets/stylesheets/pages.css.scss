@@ -27,6 +27,8 @@
 
 body {
 
+	min-width: 770px;
+
 	.container-fluid {
     padding: 10px 50px;
 	}
@@ -51,6 +53,8 @@ body {
 	a.btn-primary:visited { 
 		color: #fff; 
 	}
+	
+
 }
 
 
@@ -161,14 +165,14 @@ div {
   margin-left: 0px !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 
 	#login {
 	  padding-right: 0px !important;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	.searchbox {
 		width: 30% !important;
